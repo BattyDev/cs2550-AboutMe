@@ -1,0 +1,89 @@
+/*(2 points) Can you set a repeating background image? The text should still be readable.  Pick something that doesn’t make my eyes bleed, or I won’t give you credit.*/
+/*(2 points) can you change the font used in the body of the document to something besides Times New Roman (or whatever your browser uses by default)?*/
+body {
+  padding: 2rem;
+  margin: 0;
+  font-family:'Trebuchet MS', sans-serif;
+  background-image: url('unicorn.jpg');
+  background-repeat: repeat;
+  background-size: auto;
+  color: #111;
+  position: relative;
+}
+
+/* Overlay for legibility. Using body::before to put it between the background and the text. */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: -1;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* (2 points) on all hyperlinks, can you make it so that the underline only appears when you mouse-over the link? */
+a {
+  text-decoration: none;       /* Removes underline by default */
+  color: #a32c64;              /* Optional: set your link color */
+  transition: text-decoration 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;  /* Adds underline on hover */
+}
+
+table, th, td {
+  vertical-align: top;
+  text-align: left;
+  column-width: 10rem;
+  table-layout: fixed;
+  background-color: #ffffff;
+}
+
+/*used to make the image float to the right*/
+/*(2 points) can you make your photo right-aligned on the page, and make the page’s text flow around it?*/
+.float-right {
+  float: right;
+  margin: 0 0 1rem 1rem; /* top, right, bottom, left */
+  border-radius: 8px;     /* optional: soft corners */
+}
+
+/*(2 points) find a way to indent your poem, or center it on the page.*/
+.poem{
+  text-align: center;
+}
+
+/* Color-coded schedule blocks */
+/* (2 points) on your weekly schedule, can you fill in in each block so that each thing is color-coded in its own color (English is yellow, calculus is light red, work is light blue, etc)? */
+.work {
+  background-color: #f5a339; /* Light Orange */
+}
+
+.lunch {
+  background-color: #6d9bff; /* Light Blue*/
+}
+
+.walk {
+  background-color: #f35252; /* Light Red */
+}
+
+.commute {
+  background-color: #ee5fee; /* Light Purple */
+}
+
+.cs2370 {
+  background-color: #02ff0f; /* Light Green */
+}
+
+.workout {
+  background-color: #fff01d; /* Light Yellow */
+}

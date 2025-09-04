@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<!-- HEADER/DISCLAIMER
+ 
+Project:  Project1-About Me
+Name: Cody Adcock
+Submitted: 9/2/25
+ 
+I declare that the following source code was written by me, or provided
+by the instructor for this project. I understand that copying source
+code from any other source, providing source code to another student, 
+or leaving my code on a public web site constitutes cheating.
+I acknowledge that  If I am found in violation of this policy this may result
+in a zero grade, a permanent record on file and possibly immediate failure of the class.
+   
+ 
+-->
+
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css" />
+<!--In the <head> element, set the title, which appears on the browser’s title bar. The title should read: About <your-name>-->
+    <title>About Cody Adcock</title>
+
+</head>
+<!--Please Note: The Instructions weren't super clear on when to stop entering items into the header vs the body. I am going to assume that we want the rest of the content in the body of the web page.-->
+
+<body>
+<!--Put your name in a header, level 1-->
+<h1>Cody Adcock</h1>
+
+<!--Put a recognizable picture of you using an <img> tag.
+Please use a paint program to resize and crop your image so that it is no larger than 500 by 500px (It does not have to be square).
+If the image looks squashed or stretched I’m going to take off points.
+The image should live in the same folder as your HTML page.-->
+<img src="Cody-Adcock.jpg" alt="Picture of Cody Adcock" class=float-right width="500" height="500">
+
+<!--Your personal info
+
+Have a header (level 2) that says: “Personal Info:”
+Next, use an unordered list (bullet points) and give me the following pieces of info:
+Your major (spell it out. Don’t abbreviate).
+Your high school, and the year you graduated.
+What year are you in, currently, at UVU.
+Your favorite flavor of ice cream (mmmm, ice cream).
+Make use bold text for each label like in the example that I provided below.-->
+<h2>Personal Info:</h2>
+
+<ul>
+    <li><strong>Major:</strong> Computer Science</li>
+    <li><strong>Highshool:</strong> San Clemente High School, San Clemente, California, 2012</li>
+    <li><strong>Current year at UVU:</strong> Sophomore</li>
+    <li><strong>Favorite ice cream:</strong> Southern Blackberry Cobbler from Blue Moo in West Jordan.</li>
+</ul>
+
+<!--Enter your Five favorite books
+
+Have a level-2 header titled “My five favorite books”
+Choose five books that you like the best, and list them in the order of your preference.
+Each title should be italicized. Each author’s name should be in regular text.
+Add hyperlinks. For each of the five books you listed, make the author’s name a hyperlink to the author’s website. -->
+<h2>My five favorite books</h2>
+<ol>
+    <li><i>Oathbringer</i>, <a href="https://www.brandonsanderson.com/">Brandon Sanderson</a></li>
+    <li><i>A Memory of Light</i>, <a href="https://us.macmillan.com/author/robertjordan">Robert Jordan</a></li>
+    <li><i>Waybound</i>, <a href="https://www.willwight.com/">Will Wight</a></li>
+    <li><i>Fallout</i>, <a href="https://www.craigalanson.com/">Craig Alanson</a></li>
+    <li><i>Iron Prince</i>, <a href="https://www.wraithmarked.com/index.cfm?Page=Bryce-OConnor">Bryce O'Connor</a></li>
+</ol>
+
+<!--Compose a haiku or a limerick, or other short poem (3 or 4 lines).  Please keep your poem PG-rated (no potty humor, no sexually suggestive stuff).
+
+Have a level-2 header with a title of your poem
+Have a sentence or two explaining your inspiration for the poem.
+Put your poem after the header.
+Each line should use line-breaks, not paragraph breaks.-->
+<!--Please note: I used two breaks and italics to match the format of the example provided in the assignment.-->
+<div class="poem">
+<h2>Horn of Rebellion</h2>
+<p>An ode to my favorite mobile suit, Gundam Unicorn:<br><i>White horn breaks the void,<br>Hope and rage in perfect sync<br>Destiny rewired.</i></p>
+</div>
+<!--Make a level-2 header titled something like: “My personal interests”
+Give me three paragraphs, with three or more sentences each. In each paragraph talk about something you’re interested in.-->
+<h2>My personal interests</h2>
+<p>I really love my dogs. My wife and I have two: a Jack Russell–Chihuahua mix named Opal and a Terrier mix named Bandit. We've had both for about five years now, and we love training them and taking them out for exercise. Opal is pretty great at agility courses! Unfortunately, the location closest to us with equipment went out of business recently. We're looking for other ways to keep her busy!</p>
+<p>I'm also very into Gundam, as my "About Me" page probably makes clear. It all started with a model kit I picked up from Target one weekend as a fun project, and it quickly spiraled into TV shows, movies, more model kits, and now the trading card game. What started out as a casual hobby has grown into a large portion of my personality and bookshelf.</p>
+<p>Finally I like to play video games with friends and family members. My wife, brothers, cousins, dad, uncle, and a couple of in-laws all play Fortnite and it's turned into one big family chat with occasional battles. It's been a great way to keep in touch with people I may not get to see too frequently. Please do not ask me how much I've spent on Vbucks.</p>
+
+<!--For the Class Schedule I want you to create a table that shows your weekly class schedule. This is easy to do using table elements, but it does require some attention to detail. 
+
+Make a level-2 header titled “class schedule”
+Create a table with 6 columns.
+Set the border size to 1, so I can see the borders for each cell. Set the cell spacing to 3, and set the cell padding to 3.
+The header row should have a blank cell, followed by cells for Monday, Tuesday, Wednesday, Thursday, and Friday. If you have a Saturday class (you poor soul), you can add a sixth column (or not, I don’t care, really).
+Going down the left side of the table, I want you to list out the hours of your week-day in 30-minute increments. You can start as early as you feel necessary.
+List the classes you have as cells. Use the row-span element to block out as many 30-minute cells as you need for each item.  If you have stuff that starts at an odd time, then guess.  I won’t care, as long as it doesn’t look all wonky.
+Fill up your schedule. Make stuff up if you have to.  I want to see at least four classes that run M-W-F or Tu-Th or every weekday.  In addition to classes, You can put your employment, your work-out time, your commute time, or anything else you like.
+Use the rowspan attribute, so if you have an hour-long class, the cell should take up two rows, without a line between them.-->
+<h2>Class Schedule</h2>
+<table border="1" cellspacing="3" cellpadding="3">
+    <!--Days of the week with one left blank to leave room for times in the right column.-->
+    <tr>
+        <th></th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+    </tr>
+    <!--Time slots from 8:00 AM to 5:00 PM in 30 minute increments-->
+    <tr>
+        <td>7:00 AM</td>
+        <td></td>
+        <td rowspan="10" class="work">Work at<br>AdvancedMD</td>
+        <td></td>
+        <td rowspan="10" class="work">Work at<br>AdvancedMD</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>7:30 AM</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>8:00 AM</td>
+        <td rowspan="8" class="work">Work at<br>AdvancedMD</td>
+        <td rowspan="8" class="work">Work at<br>AdvancedMD</td>
+        <td rowspan="8" class="work">Work at<br>AdvancedMD</td>
+    </tr>
+    <tr>
+        <td>8:30 AM</td>
+    </tr>
+    <tr>
+        <td>9:00 AM</td>
+    </tr>
+    <tr>
+        <td>9:30 AM</td>
+    </tr>
+    <tr>
+        <td>10:00 AM</td>
+    </tr>
+    <tr>
+        <td>10:30 AM</td>
+    </tr>
+    <tr>
+        <td>11:00 AM</td>
+    </tr>
+    <tr>
+        <td>11:30 AM</td>
+    </tr>
+    <tr>
+        <td>12:00 PM</td>
+        <td rowspan="2" class="lunch">Lunch<br>Break</td>
+        <td rowspan="2" class="lunch">Lunch<br>Break</td>
+        <td rowspan="2" class="lunch">Lunch<br>Break</td>
+        <td rowspan="2" class="lunch">Lunch<br>Break</td>
+        <td rowspan="2" class="lunch">Lunch<br>Break</td>
+    </tr>
+    <tr>
+        <td>12:30 PM</td>
+    </tr>
+    <tr>
+        <td>1:00 PM</td>
+        <td rowspan="8" class="work">Work at<br>AdvancedMD</td>
+        <td rowspan="6" class="work">Work at<br>AdvancedMD</td>
+        <td rowspan="8" class="work">Work at<br>AdvancedMD</td>
+        <td rowspan="6" class="work">Work at<br>AdvancedMD</td>
+        <td rowspan="8" class="work">Work at<br>AdvancedMD</td>
+    </tr>
+    <tr>
+        <td>1:30 PM</td>
+    </tr>
+    <tr>
+        <td>2:00 PM</td>
+    </tr>
+    <tr>
+        <td>2:30 PM</td>
+    </tr>
+    <tr>
+        <td>3:00 PM</td>
+    </tr>
+    <tr>
+        <td>3:30 PM</td>
+    </tr> 
+    <tr>
+        <td>4:00 PM</td>
+        <td class="walk">Walk Dogs</td>
+        <td class="walk">Walk Dogs</td>
+    </tr>
+    <tr>
+        <td>4:30 PM</td>
+        <td rowspan="2" class="commute">Commute<br>To UVU</td>
+        <td rowspan="2" class="commute">Commute<br>To UVU</td>
+    </tr>
+    <tr>
+        <td>5:00 PM</td>
+        <td class="walk">Walk Dogs</td>
+        <td class="walk">Walk Dogs</td>
+        <td class="walk">Walk Dogs</td>
+    </tr>
+    <tr>
+        <td>5:30 PM</td>
+        <td rowspan="2" class="workout">Work Out<br>Gym</td>
+        <td rowspan="2" class="cs2370">CS 2370<br>C++ Programming</td>
+        <td rowspan="2" class="workout">Work Out<br>Gym</td>
+        <td rowspan="2" class="cs2370">CS 2370<br>C++ Programming</td>
+        <td rowspan="2" class="workout">Work Out<br>Gym</td>
+
+    </tr>
+    <tr>
+        <td>6:00 PM</td>
+    </tr>
+
+</table>
+
+</body>
+
+</html>
